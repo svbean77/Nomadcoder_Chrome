@@ -1,0 +1,16 @@
+#todo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+#todo-form {
+  text-align: center;
+}
+
+#todo-list {
+  background-color: white;
+  width: 50vw;
+  font-size: 20px;
+}

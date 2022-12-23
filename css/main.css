@@ -1,0 +1,21 @@
+#bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* 현재 보여지는 너비, 높이의 n%만큼 차지하겠다 */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* z축을 음수로 설정해 배경으로 깔기 위함 */
+  z-index: -1;
+  animation: fadeIn 0.7s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

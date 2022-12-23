@@ -5,8 +5,9 @@ https://fonts.google.com/specimen/Asap
 */
 
 #greeting {
+  margin-top: 6rem;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -20%);
   text-align: center;

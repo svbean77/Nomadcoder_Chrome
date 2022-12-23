@@ -1,6 +1,7 @@
 #todo {
+  margin-top: 10rem;
   position: absolute;
-  top: 35%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%);
 }

@@ -6,11 +6,34 @@
 }
 
 #todo-form {
-  text-align: center;
+  margin-bottom: 10px;
 }
 
 #todo-list {
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
+  font-size: 25px;
+  margin-right: 0px;
+}
+
+.todo .input {
+  height: 50px;
   width: 50vw;
+  border: 2px palevioletred solid;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
   font-size: 20px;
+}
+
+.todo-list {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.todo-btn {
+  background: none;
+  border: none;
+  margin-right: 10px;
 }

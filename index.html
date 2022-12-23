@@ -9,26 +9,33 @@
   </head>
   <body>
     <div id="quote">
-      <span></span>
-      <span></span>
+      <span class="quote"></span>
+      <span class="author"></span>
     </div>
-    <form id="login-form" class="hidden">
+    <h2 id="clock">00:00:00</h2>
+    <form id="login-form" class="hidden login form">
       <input
         required
         maxlength="15"
         type="text"
         placeholder="What is your name?"
+        class="login input"
       />
-      <input type="submit" value="Log In" />
+      <input type="submit" value="Log In" class="login btn" />
     </form>
-    <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <form id="reset-form" class="hidden">
-      <input type="submit" value="Reset" />
+    <div id="todo">
+      <form id="todo-form" class="todo form">
+        <input
+          type="text"
+          placeholder="할 일을 작성한 후 엔터를 입력해주세요."
+          class="todo input"
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+    <form id="reset-form" class="hidden reset form">
+      <input type="submit" value="Reset" class="reset btn" />
     </form>
     <div id="weather">
       <span></span>

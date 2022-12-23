@@ -4,11 +4,11 @@ const toDoList = document.getElementById("todo-list");
 
 let toDos = [];
 
-const DOTOS_KEY = "todos";
+const TODOS_KEY = "todos";
 
 function saveToDos() {
   //JSON.stringify: JSON 형식 그대로 문자열로 저장하는 방법 -> JSON.parse를 사용해 다시 js 형태로 바꿈
-  localStorage.setItem(DOTOS_KEY, JSON.stringify(toDos));
+  localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
 function deleteToDo(event) {
@@ -28,13 +28,15 @@ function paintToDo(newToDo) {
   const button = document.createElement("button");
 
   li.id = newToDo.id;
+  li.classList.add("todo-list");
   span.innerText = newToDo.text;
   button.innerText = "❌";
+  button.classList.add("todo-btn");
 
   button.addEventListener("click", deleteToDo);
 
-  li.appendChild(span);
   li.appendChild(button);
+  li.appendChild(span);
 
   toDoList.appendChild(li);
 }
@@ -59,7 +61,7 @@ function handleToDoSubmit(event) {
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
 //저장된 todo를 불러옴
-const savedToDos = localStorage.getItem(DOTOS_KEY);
+const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);

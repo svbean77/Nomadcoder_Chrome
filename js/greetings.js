@@ -1,6 +1,9 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const resetForm = document.querySelector("#logout-form");
+
+console.log(resetForm);
 
 //반복하여 사용하는 문자열을 변수로 선언하여 사용
 const HIDDEN_CLASSNAME = "hidden";
@@ -21,10 +24,17 @@ function onLoginSubmit(event) {
   paintGreetings(username);
 }
 
+function onResetSubmit(event) {
+  alert("모든 정보가 초기화됩니다.");
+
+  localStorage.clear();
+}
+
 function paintGreetings(username) {
   //문자열과 변수를 합칠 때 "문자열1" + 변수 대신 `문자열 ${변수}`로 사용!"
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  resetForm.classList.remove(HIDDEN_CLASSNAME);
 }
 
 /*
@@ -39,4 +49,6 @@ if (savedUsername === null) {
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);
+
+  resetForm.addEventListener("submit", onResetSubmit);
 }

@@ -7,3 +7,9 @@ https://fonts.google.com/specimen/Andika
   margin-top: 1vh;
   text-align: center;
 }
+
+.quote {
+  font-family: "Andika", sans-serif;
+  display: block;
+  margin-bottom: 5px;
+}

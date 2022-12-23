@@ -53,4 +53,4 @@ console.log(quote, author);
 //명언을 랜덤으로 보이기 위한 난수 생성
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+author.innerText = `- ${todaysQuote.author} -`;

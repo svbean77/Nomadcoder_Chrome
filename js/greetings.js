@@ -12,7 +12,7 @@ const USERNAME_KEY = "username";
 //event의 argument 자리를 넣어줌 (보통 event로 넣음)
 function onLoginSubmit(event) {
   //browser의 기본 동작을 막는 함수 ex) submit -> 새로고침, link -> 링크이동
-  event.preventDefault();
+  //  event.preventDefault();
 
   //로그인에 성공하면 입력창 숨기기
   const username = loginInput.value;

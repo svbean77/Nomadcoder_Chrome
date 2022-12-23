@@ -3,6 +3,7 @@ const choosenImage = images[Math.floor(Math.random() * images.length)];
 
 //javascript를 이용해 tag 추가
 const bgImage = document.createElement("img");
+bgImage.id = "bg-img";
 bgImage.src = `img/${choosenImage}`;
 
 //이미지를 html body에 추가

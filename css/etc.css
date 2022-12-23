@@ -11,3 +11,21 @@
   transform: translate(-50%, -20%);
   text-align: center;
 }
+
+.non-bg {
+  background: none;
+  border: none;
+}
+
+.login .input {
+  background-color: rgb(255, 255, 255, 0.4);
+  border: 0.5px palevioletred solid;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.reset .btn {
+  color: white;
+}

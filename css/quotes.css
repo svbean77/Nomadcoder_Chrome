@@ -1,10 +1,11 @@
 #quote {
+  align-items: center;
   margin-top: 1vh;
-  text-align: center;
 }
 
-.quote {
+span.quote {
   font-family: "Andika", sans-serif;
   display: block;
+  text-align: center;
   margin-bottom: 5px;
 }
